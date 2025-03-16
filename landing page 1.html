@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Teerwin VIP Shot for 100% winning predictions and sure-shot color predictions.">
+    <meta name="keywords" content="Teerwin, VIP, Prediction, Color Prediction, Sure Shot, Telegram">
+    <meta name="author" content="Teerwin">
+    <title>🎯 TEERWIN VIP SHOT 🎯</title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.25/dist/sweetalert2.min.css">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background-image: url('logo.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 700px;
+            position: relative;
+            color: #fafafa;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero h1 {
+            font-style: Palatino;
+            font-size: 3.5rem;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+            color: #ffffff;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out 0.5s;
+            color: #00ff91;
+        }
+
+        .counter {
+            font-size: 2.0rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out 1s;
+            color: #ff0134;
+        }
+
+        .timer {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff9f00;
+            margin-bottom: .5px;
+            animation: pulse 1s infinite;
+        }
+
+        .points {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .points ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .points li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+
+        .points i {
+            margin-right: 10px;
+            color: #ffffff;
+        }
+
+        .button {
+            margin-top: 30px;
+        }
+
+        .btn {
+            background-color: #ff9f00;
+            color: white;
+            padding: 18px 28px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn:hover {
+            background-color: #e87b00;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn i {
+            margin-left: 10px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Add a stylish progress bar */
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background-color: #ff9f00;
+            width: 0;
+            transition: width 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1 class="animate__animated animate__fadeIn animate__delay-1s">🎯 TEERWIN VIP SHOT 🎯</h1>
+        <h2 class="animate__animated animate__fadeIn animate__delay-1.5s">COLOUR PREDICTION KING</h2>
+        
+        <div class="counter">Free Joining Ends In</div>
+        <div class="timer" id="countdown">1:00</div>
+
+        <div class="progress-bar">
+            <div class="progress-bar-fill" id="progress-bar"></div>
+        </div>
+
+        <div class="points animate__animated animate__fadeIn animate__delay-2s">
+            <ul>
+                <li><i class="fa-solid fa-share"></i> 100% Winning Prediction</li>
+                <li><i class="fa-solid fa-share"></i> Sure Shot Prediction</li>
+                <li><i class="fa-solid fa-share"></i> Guarantee Winning!</li>
+            </ul>
+        </div>
+
+        <div class="button">
+            <a href="https://t.me/+DwnSKgwlSJY3ZWJl" class="btn btn--stripe">SUBSCRIBE FOR FREE <i class="fab fa-telegram"></i></a>
+        </div>
+        
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.25/dist/sweetalert2.min.js"></script>
+    <script>
+        let remainingSeconds = 60;
+        let progressBar = document.getElementById('progress-bar');
+
+        function updateCountdown() {
+            const minutes = Math.floor(remainingSeconds / 60);
+            const seconds = remainingSeconds % 60;
+            document.getElementById("countdown").innerHTML = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            
+            // Update progress bar
+            const progress = (60 - remainingSeconds) * (100 / 60);
+            progressBar.style.width = `${progress}%`;
+
+            remainingSeconds -= 1;
+
+            if (remainingSeconds < 0) {
+                // Display pop-up when time runs out
+                Swal.fire({
+                    title: 'Time is up!',
+                    text: 'The free joining period has ended. Stay tuned for more opportunities!',
+                    icon: 'info',
+                    confirmButtonText: 'Okay'
+                });
+                remainingSeconds = 60; // Reset to 1 minute
+            }
+        }
+
+        updateCountdown();
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
